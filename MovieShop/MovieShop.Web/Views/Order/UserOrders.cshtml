@@ -1,0 +1,38 @@
+﻿@model List<MovieShop.Domain.Domain.Order>
+
+
+    @if (Model != null)
+    {
+    <h1>Your Orders</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Movie Name</th>
+            <th>Place</th>
+            <th>Date</th>
+            <th>Genre</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            foreach (var orderTicket in order.OrderTicket)
+            {
+                <tr>
+                    <td>@orderTicket.SelectedTicket.Name</td>
+                    <td>@orderTicket.SelectedTicket.Place</td>
+                    <td>@orderTicket.SelectedTicket.Date.ToString("MM/dd/yyyy")</td>
+                    <td>@orderTicket.SelectedTicket.Genre</td>
+                    <td>@orderTicket.Quantity</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+    <a class="btn btn-primary" asp-area="" asp-controller="Order" asp-action="ExportOrders">Export to PDF</a>
+}
+else
+{
+    <h2>You have no orders.</h2>
+}

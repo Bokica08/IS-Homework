@@ -1,0 +1,10 @@
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\bin\Debug\netcoreapp3.1\MovieShop.Domain.deps.json
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\bin\Debug\netcoreapp3.1\MovieShop.Domain.dll
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\bin\Debug\netcoreapp3.1\MovieShop.Domain.pdb
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\obj\Debug\netcoreapp3.1\MovieShop.Domain.csproj.AssemblyReference.cache
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\obj\Debug\netcoreapp3.1\MovieShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\obj\Debug\netcoreapp3.1\MovieShop.Domain.AssemblyInfoInputs.cache
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\obj\Debug\netcoreapp3.1\MovieShop.Domain.AssemblyInfo.cs
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\obj\Debug\netcoreapp3.1\MovieShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\obj\Debug\netcoreapp3.1\MovieShop.Domain.dll
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Domain\obj\Debug\netcoreapp3.1\MovieShop.Domain.pdb

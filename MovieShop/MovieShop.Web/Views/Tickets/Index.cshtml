@@ -1,0 +1,48 @@
+﻿@model IEnumerable<MovieShop.Domain.Domain.Ticket>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Create new Ticket</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<form asp-action="Index" method="get">
+    <div class="form-group">
+        <label for="dateFilter">Date Filter</label>
+        <input type="date" id="dateFilter" name="dateFilter" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary mb-5">Apply Filter</button>
+</form>
+<div class="row">
+    @foreach (var item in Model)
+    {
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem; height: 30rem;">
+                <img class="card-img-top img-fluid" style="height: 50%;" src="@item.Url" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a asp-controller="Tickets" asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Name)</a>
+                    </h5>
+                    <p class="card-text">
+                        Date: @Html.DisplayFor(modelItem => item.Date)
+                        <br />
+                        Place: @Html.DisplayFor(modelItem => item.Place)
+                        <br />
+                        Genre: @Html.DisplayFor(modelItem => item.Genre)
+                        <br />
+                        Price: $@Html.DisplayFor(modelItem => item.Price)
+                    </p>
+                    <a asp-controller="Tickets" asp-action="AddTicketToCard" asp-route-id="@item.Id" class="btn btn-info">Add to Card</a>
+                    <a asp-controller="Tickets" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    <a asp-controller="Tickets" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-danger">Edit</a>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>

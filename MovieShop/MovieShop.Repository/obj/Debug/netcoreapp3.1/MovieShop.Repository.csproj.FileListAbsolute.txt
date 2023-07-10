@@ -1,0 +1,13 @@
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\bin\Debug\netcoreapp3.1\MovieShop.Repository.deps.json
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\bin\Debug\netcoreapp3.1\MovieShop.Repository.dll
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\bin\Debug\netcoreapp3.1\MovieShop.Repository.pdb
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\bin\Debug\netcoreapp3.1\MovieShop.Domain.dll
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\bin\Debug\netcoreapp3.1\MovieShop.Domain.pdb
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\obj\Debug\netcoreapp3.1\MovieShop.Repository.csproj.AssemblyReference.cache
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\obj\Debug\netcoreapp3.1\MovieShop.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\obj\Debug\netcoreapp3.1\MovieShop.Repository.AssemblyInfoInputs.cache
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\obj\Debug\netcoreapp3.1\MovieShop.Repository.AssemblyInfo.cs
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\obj\Debug\netcoreapp3.1\MovieShop.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\obj\Debug\netcoreapp3.1\MovieShop.Repository.csproj.CopyComplete
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\obj\Debug\netcoreapp3.1\MovieShop.Repository.dll
+C:\Users\Bojan\Desktop\fax\Integrirani sistemi\MovieShop\MovieShop.Repository\obj\Debug\netcoreapp3.1\MovieShop.Repository.pdb

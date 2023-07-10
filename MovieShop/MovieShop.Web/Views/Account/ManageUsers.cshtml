@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MovieShop.Domain.DTO.UserWithRoleDTO>
+@{
+    ViewData["Title"] = "Manage Users";
+    string loggedInUserEmail = User.Identity.Name;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Email</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var userRole in Model)
+        {
+            if (userRole.User.Email.Equals(loggedInUserEmail, StringComparison.InvariantCultureIgnoreCase))
+            {
+                continue;
+            }
+
+            <tr>
+                <td>@userRole.User.Email</td>
+                <td>
+                    @if (userRole.IsAdmin)
+                    {
+                        <a asp-controller="Account" asp-action="DemoteToUser" asp-route-id="@userRole.User.Id" class="btn btn-danger">Demote to User</a>
+                    }
+                    else
+                    {
+                        <a asp-controller="Account" asp-action="PromoteToAdmin" asp-route-id="@userRole.User.Id" class="btn btn-primary">Promote to Admin</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

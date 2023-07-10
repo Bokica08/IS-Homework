@@ -1,0 +1,72 @@
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<MovieShop.Domain.StripeSettings> Stripe
+@model MovieShop.Domain.DTO.ShoppingCartDTO
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @if (Model != null && Model.TicketInShoppingCart.Count > 0)
+    {
+    <div class="row m-4">
+        <form asp-controller="ShoppingCart" asp-action="PayOrder" method="post">
+            <article>
+                <script src="https://checkout.stripe.com/checkout.js"
+                        class="stripe-button"
+                        data-key="@Stripe.Value.PublishableKey"
+                        data-locale="auto"
+                        data-description="Movie Shop Payment"
+                        data-amount="@(Model.Total * 100)"
+                        data-label="Pay $@Model.Total">
+                </script>
+            </article>
+        </form>
+    </div>
+
+    <div class="row m-4">
+
+        
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.TicketInShoppingCart.Count; i++)
+                    {
+                        var item = Model.TicketInShoppingCart[i];
+
+                        <tr>
+                            <th scope="row">@(i + 1)</th>
+                            <td>@item.Ticket.Name</td>
+                            <td>@item.Quantity</td>
+                            <td>$@item.Ticket.Price</td>
+                            <td><a asp-controller="ShoppingCart" asp-action="DeleteFromShoppingCart" asp-route-id="@item.TicketId" class="btn btn-danger">Delete From ShoppingCart</a></td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot class="thead-dark">
+                    <tr>
+                        <th scope="col">Total:</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">$@Model.Total</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        }
+        else
+        {
+            <h2>No items in the shopping cart.</h2>
+        }
+    </div>
+
