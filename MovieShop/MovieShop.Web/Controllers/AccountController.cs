@@ -128,14 +128,14 @@ namespace MovieShop.Web.Controllers
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, true);
                 if (result.Succeeded)
                 {
-                    if (!await roleManager.RoleExistsAsync("Admin"))
+                    if (!await roleManager.RoleExistsAsync("User"))
                     {
-                        await roleManager.CreateAsync(new IdentityRole("Admin"));
+                        await roleManager.CreateAsync(new IdentityRole("User"));
                     }
 
-                    if (!await userManager.IsInRoleAsync(user, "Admin"))
+                    if (!await userManager.IsInRoleAsync(user, "User"))
                     {
-                        await userManager.AddToRoleAsync(user, "Admin");
+                        await userManager.AddToRoleAsync(user, "User");
                     }
 
                     return RedirectToAction("Index", "Home");
