@@ -7,6 +7,8 @@ using MovieShop.Domain.Identity;
 using Stripe;
 using MovieShop.Domain.Domain;
 using System.Collections.Generic;
+using DocumentFormat.OpenXml.InkML;
+using MovieShop.Repository.Interface;
 
 namespace MovieShop.Web.Controllers
 {
@@ -15,13 +17,17 @@ namespace MovieShop.Web.Controllers
         private readonly IShoppingCartService _shopingCartService;
         private readonly UserManager<MovieApplicationUser> _userManager;
         private readonly IEmailService _emailService;
+        private readonly IUserRepository _userRepository;
+ 
 
 
-        public ShoppingCartController(IEmailService emailService,IShoppingCartService shopingCartService, UserManager<MovieApplicationUser> userManager)
+        public ShoppingCartController(IEmailService emailService,IShoppingCartService shopingCartService, 
+            UserManager<MovieApplicationUser> userManager, IUserRepository userRepository)
         {
             _shopingCartService = shopingCartService;
             _userManager = userManager;
             _emailService = emailService;
+            _userRepository = userRepository;
         }
 
         public IActionResult Index()
@@ -39,7 +45,8 @@ namespace MovieShop.Web.Controllers
         public IActionResult PayOrder()
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            string userEmail = User.FindFirstValue(ClaimTypes.Email);
+            var userEmail = _userRepository.Get(userId).Email;
+
             this.OrderNow();
 
             var order = this._shopingCartService.getShoppingCartInfo(userId);
@@ -50,7 +57,7 @@ namespace MovieShop.Web.Controllers
                 new EmailMessage
                 {
                     MailTo = userEmail,
-                    Subject = "Your order has been placed",
+                    Subject = "Your order has been placed", 
                     Content = "You have made succefull order. You have paid: $"+order.Total+"."
                 }
             };
