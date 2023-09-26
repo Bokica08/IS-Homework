@@ -467,11 +467,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Domain\\MovieShop.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Domain\\MovieShop.Domain.csproj",
       "projectName": "MovieShop.Domain",
-      "projectPath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Domain\\MovieShop.Domain.csproj",
+      "projectPath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Domain\\MovieShop.Domain.csproj",
       "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",

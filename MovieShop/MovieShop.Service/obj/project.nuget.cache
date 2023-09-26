@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8BbSnak8sCzes0rKDaw9cnO3i5+mTkgqizNxSFYeXRCjiShqnL621ERl7u8+WdsejCoTYW7Fw7Idfkr1/5I3CA==",
+  "dgSpecHash": "3dPM27AN9iz8DLthznR/h0zvzRGT1xrFlzPq8PFH0Jtp6JshQcc1kV43V7rdopuYND8+2zqXPfXkq4MA2NJjaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Service\\MovieShop.Service.csproj",
+  "projectFilePath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Service\\MovieShop.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bojan\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\Bojan\\.nuget\\packages\\mailkit\\4.1.0\\mailkit.4.1.0.nupkg.sha512",

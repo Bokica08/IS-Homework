@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GHYe7GKgSfoSM72X1TyVNCLeAL0+wAgYFfdM6FJ36BmBRR4bz0+YDHD6Sdbd/zaAzNAYNJDAOCT4hGFmJzrg6A==",
+  "dgSpecHash": "erB6IOoAzVFCpu86N8ldQY5ZecYimd1nwi/9g/utxE0e6JRO6J7Js8I7dGRRH8oWJL9QfJJudmjZWpqvzRdvPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Web\\MovieShop.Web.csproj",
+  "projectFilePath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Web\\MovieShop.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bojan\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\Bojan\\.nuget\\packages\\closedxml\\0.102.0\\closedxml.0.102.0.nupkg.sha512",

@@ -36,55 +36,29 @@ namespace MovieShop.Web.Controllers
             this._shopingCartService.deleteTicketFromShoppingCart(userId, id);
             return RedirectToAction("Index", "ShoppingCart");
         }
-        public IActionResult PayOrder(string stripeEmail, string stripeToken)
+        public IActionResult PayOrder()
         {
-            var customerService = new CustomerService();
-            var chargeService = new ChargeService();
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            string userEmail = User.FindFirstValue(ClaimTypes.Email);
+            this.OrderNow();
 
             var order = this._shopingCartService.getShoppingCartInfo(userId);
 
-            var customer = customerService.Create(new CustomerCreateOptions
-            {
-                Email = stripeEmail,
-                Source = stripeToken
-            });
-
-            var charge = chargeService.Create(new ChargeCreateOptions
-            {
-                Amount = (Convert.ToInt32(order.Total) * 100),
-                Description = "Tickets Application Payment",
-                Currency = "usd",
-                Customer = customer.Id
-            });
-
-            if (charge.Status == "succeeded")
-            {
-                var result = this.OrderNow();
-
-                if (result)
-                {
+   
                     var emailMessage = new List<EmailMessage>
             {
                 new EmailMessage
                 {
-                    MailTo = stripeEmail,
+                    MailTo = userEmail,
                     Subject = "Your order has been placed",
                     Content = "You have made succefull order. You have paid: $"+order.Total+"."
                 }
             };
 
                     _emailService.SendEmailAsync(emailMessage);
-                    return RedirectToAction("Index", "ShoppingCart");
+                    return RedirectToAction("UserOrders", "Order");
                 }
-                else
-                {
-                    return RedirectToAction("Index", "ShoppingCart");
-                }
-            }
-
-            return RedirectToAction("Index", "ShoppingCart");
-        }
+   
         private Boolean OrderNow()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);

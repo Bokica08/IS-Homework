@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ec4ZcjpxzWVtwT283/ynThYzn69y207wd61BW8KatTs7hHWKRfJ8crKRC7a46uouCAw8ijE3YENkeKTpUOKw4w==",
+  "dgSpecHash": "ftqwtIOefX3hefiKAO2gSz6CCx5spo1TsSV9ypxoYJqLD4AR5yUDRJv0DSHQcqOazxnuN5xk1itMrhESVeVvOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Repository\\MovieShop.Repository.csproj",
+  "projectFilePath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Repository\\MovieShop.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bojan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.32\\microsoft.aspnetcore.cryptography.internal.3.1.32.nupkg.sha512",
     "C:\\Users\\Bojan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.32\\microsoft.aspnetcore.cryptography.keyderivation.3.1.32.nupkg.sha512",

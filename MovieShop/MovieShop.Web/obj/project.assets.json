@@ -9018,11 +9018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Web\\MovieShop.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Web\\MovieShop.Web.csproj",
       "projectName": "MovieShop.Web",
-      "projectPath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Web\\MovieShop.Web.csproj",
+      "projectPath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Web\\MovieShop.Web.csproj",
       "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Web\\obj\\",
+      "outputPath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9039,14 +9039,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Domain\\MovieShop.Domain.csproj": {
-              "projectPath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Domain\\MovieShop.Domain.csproj"
+            "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Domain\\MovieShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Domain\\MovieShop.Domain.csproj"
             },
-            "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Repository\\MovieShop.Repository.csproj": {
-              "projectPath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Repository\\MovieShop.Repository.csproj"
+            "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Repository\\MovieShop.Repository.csproj": {
+              "projectPath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Repository\\MovieShop.Repository.csproj"
             },
-            "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Service\\MovieShop.Service.csproj": {
-              "projectPath": "C:\\Users\\Bojan\\Desktop\\fax\\Integrirani sistemi\\MovieShop\\MovieShop.Service\\MovieShop.Service.csproj"
+            "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Service\\MovieShop.Service.csproj": {
+              "projectPath": "C:\\Users\\Bojan\\Desktop\\git\\IS-Homework\\MovieShop\\MovieShop.Service\\MovieShop.Service.csproj"
             }
           }
         }

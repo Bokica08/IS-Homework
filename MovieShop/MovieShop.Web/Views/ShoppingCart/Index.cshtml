@@ -1,5 +1,4 @@
 ﻿@using Microsoft.Extensions.Options
-@inject IOptions<MovieShop.Domain.StripeSettings> Stripe
 @model MovieShop.Domain.DTO.ShoppingCartDTO
 
 @{
@@ -11,18 +10,10 @@
     @if (Model != null && Model.TicketInShoppingCart.Count > 0)
     {
     <div class="row m-4">
-        <form asp-controller="ShoppingCart" asp-action="PayOrder" method="post">
-            <article>
-                <script src="https://checkout.stripe.com/checkout.js"
-                        class="stripe-button"
-                        data-key="@Stripe.Value.PublishableKey"
-                        data-locale="auto"
-                        data-description="Movie Shop Payment"
-                        data-amount="@(Model.Total * 100)"
-                        data-label="Pay $@Model.Total">
-                </script>
-            </article>
-        </form>
+            <form asp-controller="ShoppingCart" asp-action="PayOrder" method="post">
+                <button type="submit">Pay</button>
+            </form>
+
     </div>
 
     <div class="row m-4">

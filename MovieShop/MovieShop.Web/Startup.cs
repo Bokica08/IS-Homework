@@ -51,7 +51,6 @@ namespace MovieShop.Web
             services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
 
             services.AddTransient<IEmailService, EmailServiceImpl>();
-            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
 
 
             services.AddRazorPages();
@@ -60,8 +59,6 @@ namespace MovieShop.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
-            GemBox.Document.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
             if (env.IsDevelopment())
             {
